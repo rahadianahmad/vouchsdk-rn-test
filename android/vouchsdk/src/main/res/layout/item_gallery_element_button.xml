@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dimens_200dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <FrameLayout
+        android:id="@+id/buttonItem"
+        style="@style/VouchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimens_40dp"
+        android:layout_marginBottom="@dimen/dimens_8dp"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/borderButton"
+            android:layout_width="@dimen/dimens_200dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/button_chat_line_top" />
+
+        <TextView
+            android:id="@+id/vouchButtonItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/dimens_8dp"
+            android:paddingStart="@dimen/dimens_16dp"
+            android:paddingEnd="@dimen/dimens_16dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            tools:text="Radhika" />
+    </FrameLayout>
+</FrameLayout>

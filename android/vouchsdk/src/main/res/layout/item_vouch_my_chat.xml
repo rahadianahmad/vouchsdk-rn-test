@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/dimens_16dp"
+    android:paddingTop="@dimen/dimens_16dp"
+    android:paddingEnd="@dimen/dimens_16dp">
+    <TextView
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens_4dp"
+        android:layout_marginEnd="@dimen/dimens_8dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorTextDate"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_10sp"
+        android:text="Retry" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimens_4dp"
+                android:layout_marginBottom="@dimen/dimens_4dp"
+                android:visibility="gone"
+                tools:text="Radhika Yusuf"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dimens_8dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/myChatImage"
+                android:layout_width="@dimen/dimens_240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:riv_border_color="#C2C2C2"
+                app:riv_border_width="@dimen/dimens_1dp"
+                app:riv_corner_radius="@dimen/dimens_8dp"
+                tools:src="@drawable/ic_mic_white_24dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardBubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimens_8dp"
+            app:cardCornerRadius="@dimen/dimens_4dp">
+
+            <TextView
+                android:id="@+id/myChatContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimens_16dp"
+                android:paddingTop="@dimen/dimens_8dp"
+                android:paddingEnd="@dimen/dimens_16dp"
+                android:paddingBottom="@dimen/dimens_8dp"
+                android:textColor="@color/colorTextPrimary"
+                tools:text="Hello" />
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myPackVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dimens_8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/myImageVideo"
+                    android:layout_width="@dimen/dimens_240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:riv_border_color="#C2C2C2"
+                    app:riv_border_width="@dimen/dimens_1dp"
+                    app:riv_corner_radius="@dimen/dimens_8dp"
+                    tools:src="@drawable/ic_mic_white_24dp" />
+            <ImageButton
+                android:id="@+id/myPlayVideo"
+                android:layout_width="@dimen/dimens_40dp"
+                android:layout_height="@dimen/dimens_40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play_arrow_white_24dp"
+                android:background="@drawable/bg_button_rec_audio"
+                android:tint="@color/colorWhite"
+                android:padding="1dp"
+                android:layout_centerInParent="true"/>
+                    <ProgressBar
+                        android:id="@+id/myProgressVideo"
+                        android:layout_width="@dimen/dimens_40dp"
+                        android:layout_height="@dimen/dimens_40dp"
+                        android:layout_gravity="center"
+                        android:padding="1dp"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/myDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimens_4dp"
+                android:layout_marginTop="@dimen/dimens_4dp"
+                android:layout_marginEnd="@dimen/dimens_4dp"
+                android:textColor="@color/colorTextDate"
+                android:textSize="@dimen/size_10sp"
+                tools:text="19 Aug, 19:00" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dimens_24dp"
+                android:id="@+id/checklist"
+                android:layout_marginTop="@dimen/dimens_4dp"
+                android:layout_marginEnd="@dimen/dimens_8dp"
+                android:layout_height="@dimen/dimens_16dp">
+                <ImageView
+                    android:layout_width="@dimen/dimens_18dp"
+                    android:layout_height="@dimen/dimens_18dp"
+                    android:padding="@dimen/dimens_2dp"
+                    android:src="@drawable/ic_check"/>
+                <ImageView
+                    android:layout_width="@dimen/dimens_18dp"
+                    android:layout_height="@dimen/dimens_18dp"
+                    android:padding="@dimen/dimens_2dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_check"/>
+            </RelativeLayout></LinearLayout>
+
+            <ImageView
+                android:id="@+id/pendingTime"
+                android:layout_width="@dimen/dimens_18dp"
+                android:layout_height="@dimen/dimens_18dp"
+                android:layout_marginStart="@dimen/dimens_4dp"
+                android:layout_marginTop="@dimen/dimens_4dp"
+                android:layout_marginEnd="@dimen/dimens_8dp"
+                android:padding="@dimen/dimens_2dp"
+                android:src="@drawable/ic_timer"
+                android:contentDescription="TODO" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
