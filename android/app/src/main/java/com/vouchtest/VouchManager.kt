@@ -15,17 +15,17 @@ class VouchManager(reactContext: ReactApplicationContext) : ReactContextBaseJava
     }
 
     private  fun sendEvent(reactContext: ReactApplicationContext, eventName: String,   params: WritableMap){
-        reactContext
-                .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
-                .emit(eventName, params)
+        // reactContext
+        //         .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
+        //         .emit(eventName, params)
     }
 
-    val params: WritableMap = Arguments.createMap()
+    // val params: WritableMap = Arguments.createMap()
 
 
     @ReactMethod
     fun openChat(id: String, promise: Promise){
-       promise.resolve(id)
+    //    promise.resolve(id)
 
 //        VouchSDK.setCredential(username = "", password = "")
 //                .setApiKey("pmWWS8E.LHWbcHHPHvxV8jAs6qldAsf6qtlJ3ZtIwxF")
